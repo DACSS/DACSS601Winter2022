@@ -1,5 +1,5 @@
 ---
-title: "Instructor Name"
+title: "Sean Conway"
 image: "images/sean_conway_photo.png"
 links:
   - label: GitHub
