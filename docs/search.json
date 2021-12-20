@@ -5,21 +5,21 @@
       "title": "About the Course",
       "author": [],
       "contents": "\r\nThis is some information about DACSS and the course. Can be prefilled in with something interesting.\r\nCourse Instructor:\r\nSean Conway\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-20T12:56:38-05:00"
+      "last_modified": "2021-12-20T12:57:50-05:00"
     },
     {
       "path": "index.html",
       "title": "Student Submissions",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\nDACSS 601\r\n\r\n\r\nWinter 2022\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-20T12:55:07-05:00"
+      "last_modified": "2021-12-20T13:12:52-05:00"
     },
     {
       "path": "instructor.html",
       "title": "Sean Conway",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          \r\n          \r\n          Data Analytics and Computational Social Science\r\n          \r\n          \r\n          About\r\n          Syllabus\r\n          Students\r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Sean Conway\r\n          \r\n          \r\n            \r\n              \r\n            \r\n            \r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n                  \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                \r\n                                \r\n                  \r\n                    \r\n                      Email\r\n                    \r\n                  \r\n                \r\n                              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                                \r\n                  \r\n                    GitHub\r\n                  \r\n                \r\n                                \r\n                  \r\n                    Email\r\n                  \r\n                \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    \r\n          \r\n          \r\n            \r\n          \r\n          \r\n          \r\n            \r\n              \r\n              \r\n              \r\n              \r\n              \r\n            \r\n          \r\n          \r\n          \r\n\r\n    \r\n  ",
-      "last_modified": "2021-12-20T12:57:07-05:00"
+      "last_modified": "2021-12-20T12:57:50-05:00"
     },
     {
       "path": "students.html",
@@ -32,8 +32,8 @@
       "path": "syllabus.html",
       "title": "Course Syllabus",
       "author": [],
-      "contents": "\r\nEdit this page with the course syllabus and/or other information. Feel free to delete the example file below as well.\r\n(Note that when knitted, it might display as ‘Couldn’t load plugin’. Simply click ‘Open in Browser’ at the top left side of the screen to view your page looks like.)\r\nSyllabus:\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-20T12:51:31-05:00"
+      "contents": "\r\nSyllabus:\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-12-20T13:12:41-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
