@@ -4,36 +4,36 @@
       "path": "about.html",
       "title": "About the Course",
       "author": [],
-      "contents": "\r\nThis is some information about DACSS and the course. Can be prefilled in with something interesting.\r\nCourse Instructor:\r\nSean Conway\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-20T12:57:50-05:00"
+      "contents": "\nThis is some information about DACSS and the course. Can be prefilled in with something interesting.\nCourse Instructor:\nSean Conway\n\n\n\n",
+      "last_modified": "2021-12-20T18:13:00-05:00"
     },
     {
       "path": "index.html",
       "title": "Student Submissions",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n\r\nDACSS 601\r\n\r\n\r\nWinter 2022\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-20T13:12:52-05:00"
+      "contents": "\n\n\n\n\nDACSS 601\n\n\nWinter 2022\n\n\n\n\n\n\n\n\n",
+      "last_modified": "2021-12-26T17:54:13-05:00"
     },
     {
       "path": "instructor.html",
       "title": "Sean Conway",
       "author": [],
-      "contents": "\r\n\r\n          \r\n          \r\n          \r\n          \r\n          Data Analytics and Computational Social Science\r\n          \r\n          \r\n          About\r\n          Syllabus\r\n          Students\r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Sean Conway\r\n          \r\n          \r\n            \r\n              \r\n            \r\n            \r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n                  \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                \r\n                                \r\n                  \r\n                    \r\n                      Email\r\n                    \r\n                  \r\n                \r\n                              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                                \r\n                  \r\n                    GitHub\r\n                  \r\n                \r\n                                \r\n                  \r\n                    Email\r\n                  \r\n                \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    \r\n          \r\n          \r\n            \r\n          \r\n          \r\n          \r\n            \r\n              \r\n              \r\n              \r\n              \r\n              \r\n            \r\n          \r\n          \r\n          \r\n\r\n    \r\n  ",
-      "last_modified": "2021-12-20T12:57:50-05:00"
+      "contents": "\n\n          \n          \n          \n          \n          Data Analytics and Computational Social Science\n          \n          \n          About\n          Syllabus\n          Students\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Sean Conway\n          \n          \n            \n              \n            \n            \n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          \n          \n            \n          \n          \n          \n            \n              \n              \n              \n              \n              \n            \n          \n          \n          \n\n    \n  ",
+      "last_modified": "2021-12-20T18:13:00-05:00"
     },
     {
       "path": "students.html",
       "title": "Students",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\nMax\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-18T23:19:27-05:00"
+      "contents": "\n\n\n\nMax\n\n\n\n\n",
+      "last_modified": "2021-12-20T18:13:00-05:00"
     },
     {
       "path": "syllabus.html",
       "title": "Course Syllabus",
       "author": [],
-      "contents": "\r\nSyllabus:\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-20T13:12:41-05:00"
+      "contents": "\nSyllabus:\n\n\n\n\n\n",
+      "last_modified": "2021-12-20T18:13:00-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

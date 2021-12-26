@@ -12,7 +12,23 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Erin_Liu_HW1</title>
+      <dc:creator>Erin Liu</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/erinliuhw1</link>
+      <description>A new article created using the Distill format.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/erinliuhw1</guid>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>HW1</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/hw1</link>
+      <description>A new article created using the Distill format.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/hw1</guid>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Welcome to DACSS 601</title>
       <dc:creator>Meredith Rolfe</dc:creator>

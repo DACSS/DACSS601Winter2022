@@ -1,5 +1,39 @@
 [
   {
+    "path": "posts/erinliuhw1/",
+    "title": "Erin_Liu_HW1",
+    "description": "A new article created using the Distill format.",
+    "author": [
+      {
+        "name": "Erin Liu",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-12-26",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\nThis is the HW1 from Erin Liu\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-26T17:52:57-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/hw1/",
+    "title": "HW1",
+    "description": "A new article created using the Distill format.",
+    "author": [
+      {
+        "name": "Haoyan Xiang",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-26",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-26T17:52:07-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to DACSS 601",
     "description": "Welcome to DACSS 601: Foundations of Data Science. We hope you enjoy \nreading what we have to say!",
@@ -13,9 +47,9 @@
     "categories": [
       "welcome"
     ],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-12-18T22:37:53-05:00",
+    "last_modified": "2021-12-20T17:57:09-05:00",
     "input_file": {}
   }
 ]
