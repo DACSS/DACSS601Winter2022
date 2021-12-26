@@ -34,6 +34,23 @@
     "input_file": {}
   },
   {
+    "path": "posts/hw2/",
+    "title": "HW2",
+    "description": "Homework 2",
+    "author": [
+      {
+        "name": "Adam Wheeler",
+        "url": "na"
+      }
+    ],
+    "date": "2021-12-26",
+    "categories": [],
+    "contents": "\r\nRead in a data set\r\n\r\n\r\nlibrary(tidyverse)\r\nlibrary(dplyr)\r\npoultry <- read_csv(\"../Downloads/poultry_tidy.csv\")\r\n\r\n\r\n\r\nExplain the variables\r\n\r\n\r\ncols(\r\n  Product = col_character(), # string\r\n  Month = col_character(), # string\r\n  Year = col_double(), # numeric\r\n  Price_Dollar = col_double() # numeric\r\n)\r\n\r\n\r\n\r\nPerform basic operations\r\nGet highest price per product\r\n\r\n\r\npoultry %>%\r\n  arrange(desc(Price_Dollar)) %>%\r\n  select(Product, Price_Dollar) %>%\r\n  group_by(Product) %>%\r\n  slice(1) %>%\r\n  ungroup() %>%\r\n  arrange(desc(Price_Dollar))\r\n\r\n\r\n# A tibble: 5 x 2\r\n  Product        Price_Dollar\r\n  <chr>                 <dbl>\r\n1 B/S Breast             7.04\r\n2 Bone-in Breast         3.90\r\n3 Whole                  2.48\r\n4 Thighs                 2.22\r\n5 Whole Legs             2.04\r\n\r\nGet date of lowest price per product\r\n\r\n\r\npoultry %>%\r\n  arrange(Price_Dollar) %>%\r\n  select(Product, Month, Year, Price_Dollar) %>%\r\n  group_by(Product) %>%\r\n  slice(1)\r\n\r\n\r\n# A tibble: 5 x 4\r\n# Groups:   Product [5]\r\n  Product        Month    Year Price_Dollar\r\n  <chr>          <chr>   <dbl>        <dbl>\r\n1 B/S Breast     January  2012         6.38\r\n2 Bone-in Breast January  2013         3.90\r\n3 Thighs         July     2004         2.00\r\n4 Whole          January  2004         1.98\r\n5 Whole Legs     January  2004         1.94\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-26T18:14:58-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to DACSS 601",
     "description": "Welcome to DACSS 601: Foundations of Data Science. We hope you enjoy \nreading what we have to say!",
@@ -49,7 +66,7 @@
     ],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-12-26T18:00:36-05:00",
-    "input_file": {}
+    "last_modified": "2021-12-26T18:16:27-05:00",
+    "input_file": "welcome.knit.md"
   }
 ]
