@@ -45,3 +45,4 @@ vignettes/*.pdf
 .Renviron
 .env
 email_creds
+NA
