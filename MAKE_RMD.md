@@ -30,4 +30,4 @@ knitr::opts_chunk$set(echo = FALSE)
 ````
 ![Setup the file](https://i.imgur.com/Kmab4Iy.png)  
 
-- You are all set now! Feel free to add your code now.
+- You are all set! Feel free to add your code now.
