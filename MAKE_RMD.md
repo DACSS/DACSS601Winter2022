@@ -6,10 +6,12 @@
 
 ![Make a new RMD file](https://i.imgur.com/aIe3vtN.png)  
 
-- Select Empty Document
+- Select Empty Document  
+
 ![Create Empty Document](https://i.imgur.com/IJFf22j.png)  
 
-- This is the file you shoulld get when you make a new RMD file.
+- This is the file you shoulld get when you make a new RMD file.  
+
 ![New File](https://i.imgur.com/czUf3oP.png)  
 
 - Setup the file by adding this to your empty file:  
