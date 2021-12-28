@@ -30,4 +30,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ````
 ![Setup the file](https://i.imgur.com/Kmab4Iy.png)  
 
+- Edit the `title`, `description` and `author` fields.
+
 - You are all set! Feel free to add your code now.
