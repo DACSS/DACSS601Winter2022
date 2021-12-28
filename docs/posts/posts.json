@@ -1,5 +1,111 @@
 [
   {
+    "path": "posts/challenge-1-solution/",
+    "title": "Challenge 1 Solution",
+    "description": "Reading in the first sheet from the Active Duty Marital Data.",
+    "author": [
+      {
+        "name": "Sean Conway",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-28",
+    "categories": [],
+    "contents": "\n\n\nlibrary(dplyr)\nlibrary(readxl)\nlibrary(tidyr)\nlibrary(stringr)\nfile_path <- \"../data/ActiveDuty_MaritalStatus.xls\"\n\n\n\nBefore we get started…\nThis solution makes frequent use of the “pipe”, the %>% operator. Introduced in the magrittr package (but now commonly associated with dplyr, which it comes preloaded in), the pipe allows the user to pass the results of operations to further lines of code.\nFor example, below we work with the dataframe mtcars. We first use the pipe to pass the dataframe downstream. Then, we select the columns mpg and wt, passing a dataframe with only these two columns to the next line of code, which filters the data to only include rows where mpg>=15.\n\n\nmtcars <- as_tibble(mtcars)\nmtcars %>% \n  select(mpg, wt) %>%\n  filter(mpg >= 15) \n\n\n# A tibble: 27 × 2\n     mpg    wt\n   <dbl> <dbl>\n 1  21    2.62\n 2  21    2.88\n 3  22.8  2.32\n 4  21.4  3.22\n 5  18.7  3.44\n 6  18.1  3.46\n 7  24.4  3.19\n 8  22.8  3.15\n 9  19.2  3.44\n10  17.8  3.44\n# … with 17 more rows\n\nFor more info on the pipe, watch the video on piping, read the chapter on piping in R4DS, or visit https://magrittr.tidyverse.org/.\nThe data\n\nReading in the data - First Excel Sheet\nWhile eventually we will want to read in all the sheets at once, we will start out by reading in the first Excel Sheet, TotalDoD (see above).\nWe will use the read_excel() function from the readxl package.\nFirst, we’re going to manually specify the names of our columns. This involves doing a bit hard coding (reading in messy data is the only time hard coding is recommended!).\n\n\ncol_names_dod <- c(\"pay_grade\",\n                   \"single_withoutchildren_male\",\n                    \"single_withoutchildren_female\",\n                    \"single_withoutchildren_total\",\n                    \"single_withchildren_male\",\n                    \"single_withchildren_female\",\n                    \"single_withchildren_total\",\n                    \"married_jointservice_male\",\n                    \"married_jointservice_female\",\n                    \"married_jointservice_total\",\n                    \"married_civilian_female\",\n                    \"married_civilian_male\",\n                    \"married_civilian_total\",\n                    \"married_male_total\",\n                    \"married_female_total\",\n                    \"married_total_total\")\n\n\n\nNote that we named these columns so they can be adequately separated later on.\nNext we have to use read_excel(), but we have to specify a number of arguments. We first specify the path (note - file_path is a variable that I created ahead of time to be specific to my computer. Yours will be different). Next, we specify sheet, the number of the sheet we wish to read in (we can also specify the sheet name). Next, we carefully chooose the range of cells in the file we read in, based on our visual inspection of the file. This is another case where we must hard-code it. Here, we want the range to go from B10 to Q37. We also need to manually specify col_names from our col_names_dod vector that we created above. Once we read it in, we will remove any rows containing the word “total” from the column pay_grade. We do so using the function str_detect() from the stringr package, which takes looks for the pattern “total” in the column pay_grade. We use the ! operator to tell filter() we do NOT want these rows.\n\n\nfile_path\n\n\n[1] \"../data/ActiveDuty_MaritalStatus.xls\"\n\nmarital_dod_1 <- read_excel(path=file_path,\n                      sheet = 1, \n                      range = \"B10:Q37\",\n                      col_names = col_names_dod) %>%\n  filter(!str_detect(pay_grade, \"total\"))#regex(\"total\",ignore_case = TRUE),negate = T))\nmarital_dod_1\n\n\n# A tibble: 28 × 16\n   pay_grade      single_withoutch… single_withoutch… single_withoutc…\n   <chr>                      <dbl>             <dbl>            <dbl>\n 1 E-1                        31229              5717            36946\n 2 E-2                        53094              8388            61482\n 3 E-3                       131091             21019           152110\n 4 E-4                       112710             16381           129091\n 5 E-5                        57989             11021            69010\n 6 E-6                        19125              4654            23779\n 7 E-7                         5446              1913             7359\n 8 E-8                         1009               438             1447\n 9 E-9                          381               202              583\n10 TOTAL ENLISTED            412074             69733           481807\n# … with 18 more rows, and 12 more variables:\n#   single_withchildren_male <dbl>, single_withchildren_female <dbl>,\n#   single_withchildren_total <dbl>, married_jointservice_male <dbl>,\n#   married_jointservice_female <dbl>,\n#   married_jointservice_total <dbl>, married_civilian_female <dbl>,\n#   married_civilian_male <dbl>, married_civilian_total <dbl>,\n#   married_male_total <dbl>, married_female_total <dbl>, …\n\nWe’ve read in the data!\nThis tibble looks okay, but there’s still much work to be done. First, we need to remove any of the columns that contain the word \"total\". We don’t need these aggregated totals, as they will only muddle the data (plus we can calculate them ourselves if needed).\n\n\nmarital_dod_2 <- marital_dod_1 %>%\n  select(c(pay_grade,!contains(\"total\")))\nmarital_dod_2\n\n\n# A tibble: 28 × 9\n   pay_grade      single_withoutch… single_withoutch… single_withchil…\n   <chr>                      <dbl>             <dbl>            <dbl>\n 1 E-1                        31229              5717              563\n 2 E-2                        53094              8388             1457\n 3 E-3                       131091             21019             4264\n 4 E-4                       112710             16381             9491\n 5 E-5                        57989             11021            10937\n 6 E-6                        19125              4654            10369\n 7 E-7                         5446              1913             6530\n 8 E-8                         1009               438             1786\n 9 E-9                          381               202              579\n10 TOTAL ENLISTED            412074             69733            45976\n# … with 18 more rows, and 5 more variables:\n#   single_withchildren_female <dbl>,\n#   married_jointservice_male <dbl>,\n#   married_jointservice_female <dbl>, married_civilian_female <dbl>,\n#   married_civilian_male <dbl>\n\nNext, we’ll use pivot_longer() to combine the column names (except for pay_grade) into a single column, status. We do this because the variable status is currently spread across columns (it is wide). We want our data to be tidy - where each row is a single observation.\nWe specify cols as every column except pay_grade with !contains(pay_grade). We also specify that the column names will be moved to status and the column values will be moved to count.\n\n\nmarital_dod_3 <- marital_dod_2 %>%\n  pivot_longer(cols = !contains(\"pay_grade\"),\n               names_to = \"status\", values_to = \"count\")\nmarital_dod_3\n\n\n# A tibble: 224 × 3\n   pay_grade status                        count\n   <chr>     <chr>                         <dbl>\n 1 E-1       single_withoutchildren_male   31229\n 2 E-1       single_withoutchildren_female  5717\n 3 E-1       single_withchildren_male        563\n 4 E-1       single_withchildren_female      122\n 5 E-1       married_jointservice_male       139\n 6 E-1       married_jointservice_female     141\n 7 E-1       married_civilian_female        5060\n 8 E-1       married_civilian_male           719\n 9 E-2       single_withoutchildren_male   53094\n10 E-2       single_withoutchildren_female  8388\n# … with 214 more rows\n\nOur data is now tidy! Now we have just a bit more to do. We should use separate() to separate pay_grade into two columns (enlisted and pay_grade), as well as separate status into three columns (relationship, family_status, and gender).\n\n\nmarital_dod_tidy <- marital_dod_3 %>%\n  separate(col=pay_grade, into=c(\"enlisted\",\"pay_grade\"),\n           sep=\"-\") %>% \n  separate(col=status, into = c(\"relationship\", \"family_status\",\"gender\"),\n           sep = \"_\")\nmarital_dod_tidy\n\n\n# A tibble: 224 × 6\n   enlisted pay_grade relationship family_status   gender count\n   <chr>    <chr>     <chr>        <chr>           <chr>  <dbl>\n 1 E        1         single       withoutchildren male   31229\n 2 E        1         single       withoutchildren female  5717\n 3 E        1         single       withchildren    male     563\n 4 E        1         single       withchildren    female   122\n 5 E        1         married      jointservice    male     139\n 6 E        1         married      jointservice    female   141\n 7 E        1         married      civilian        female  5060\n 8 E        1         married      civilian        male     719\n 9 E        2         single       withoutchildren male   53094\n10 E        2         single       withoutchildren female  8388\n# … with 214 more rows\n\nWhala! We successfully read in and cleaned a very messy Excel spreadsheet.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-28T18:25:52-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsdacssgithubiodacss601winter2022postshw2/",
+    "title": "HW2",
+    "description": "Homework 2",
+    "author": [
+      {
+        "name": "Adam Wheeler",
+        "url": "na"
+      }
+    ],
+    "date": "2021-12-28",
+    "categories": [],
+    "contents": "\nRead in a data set\n\n\nlibrary(tidyverse)\nlibrary(dplyr)\npoultry <- read_csv(\"../Downloads/poultry_tidy.csv\")\n\n\n\nExplain the variables\n\n\ncols(\n  Product = col_character(), # string\n  Month = col_character(), # string\n  Year = col_double(), # numeric\n  Price_Dollar = col_double() # numeric\n)\n\n\n\nPerform basic operations\nGet highest price per product\n\n\npoultry %>%\n  arrange(desc(Price_Dollar)) %>%\n  select(Product, Price_Dollar) %>%\n  group_by(Product) %>%\n  slice(1) %>%\n  ungroup() %>%\n  arrange(desc(Price_Dollar))\n\n\n# A tibble: 5 x 2\n  Product        Price_Dollar\n  <chr>                 <dbl>\n1 B/S Breast             7.04\n2 Bone-in Breast         3.90\n3 Whole                  2.48\n4 Thighs                 2.22\n5 Whole Legs             2.04\n\nGet date of lowest price per product\n\n\npoultry %>%\n  arrange(Price_Dollar) %>%\n  select(Product, Month, Year, Price_Dollar) %>%\n  group_by(Product) %>%\n  slice(1)\n\n\n# A tibble: 5 x 4\n# Groups:   Product [5]\n  Product        Month    Year Price_Dollar\n  <chr>          <chr>   <dbl>        <dbl>\n1 B/S Breast     January  2012         6.38\n2 Bone-in Breast January  2013         3.90\n3 Thighs         July     2004         2.00\n4 Whole          January  2004         1.98\n5 Whole Legs     January  2004         1.94\n\n\n\n\n  \n    \n      \n       \n      Comment on this article\n    \n    \n      Share:  \n      \n        \n      \n      \n        \n      \n    \n  \n  \n  \nvar disqus_config = function () {\n  this.page.url = 'https://github.com/DACSS/dacss_course_website/posts/hw2/';\n  this.page.identifier = 'posts/hw2/';\n};\n(function() {\n  var d = document, s = d.createElement('script');\n  s.src = 'https://dacss-course-github.disqus.com/embed.js';\n  s.setAttribute('data-timestamp', +new Date());\n  (d.head || d.body).appendChild(s);\n})();\n\n\n",
+    "preview": "posts/httpsdacssgithubiodacss601winter2022postshw2/../../images/white-dacss-wordmark.png",
+    "last_modified": "2021-12-28T18:48:24-05:00",
+    "input_file": {},
+    "preview_width": 1492,
+    "preview_height": 245
+  },
+  {
+    "path": "posts/hw1-owenvespa/",
+    "title": "HW1",
+    "description": "HW1 -R Markdown post",
+    "author": [
+      {
+        "name": "Rhowena Vespa",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-28",
+    "categories": [],
+    "contents": "\r\nR Markdown\r\nA new article created using the Distill format.\r\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\r\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\r\n\r\n\r\nsummary(cars)\r\n\r\n\r\n     speed           dist       \r\n Min.   : 4.0   Min.   :  2.00  \r\n 1st Qu.:12.0   1st Qu.: 26.00  \r\n Median :15.0   Median : 36.00  \r\n Mean   :15.4   Mean   : 42.98  \r\n 3rd Qu.:19.0   3rd Qu.: 56.00  \r\n Max.   :25.0   Max.   :120.00  \r\n\r\nIncluding Plots\r\nYou can also embed plots, for example:\r\n\r\n\r\n\r\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n\r\n\r\n\r\n",
+    "preview": "posts/hw1-owenvespa/distill-preview.png",
+    "last_modified": "2021-12-28T18:32:35-05:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
+    "path": "posts/hw1/",
+    "title": "HW1",
+    "description": "HW1 for Haoyan",
+    "author": [
+      {
+        "name": "Haoyan Xiang",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-28",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-28T18:25:49-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/hw2-by-guodong-zhang/",
+    "title": "HW2 by Guodong Zhang",
+    "description": "This is my Homework 2 for DACSS 601.",
+    "author": [
+      {
+        "name": "Guodong Zhang",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-28",
+    "categories": [],
+    "contents": "\r\n1. Read in a dataset.\r\nThe dataset, eggs_tidy.xlsx, is clean and comes from the “Sample Datasets” section on Google Classroom.\r\n\r\n\r\negg_data <- read_excel(\"C:/Users/zhang/OneDrive - University of Massachusetts/_601/Sample Datasets/eggs_tidy.xlsx\")\r\negg_data\r\n\r\n\r\n# A tibble: 120 x 6\r\n   month      year large_half_dozen large_dozen extra_large_half_dozen\r\n   <chr>     <dbl>            <dbl>       <dbl>                  <dbl>\r\n 1 January    2004             126         230                    132 \r\n 2 February   2004             128.        226.                   134.\r\n 3 March      2004             131         225                    137 \r\n 4 April      2004             131         225                    137 \r\n 5 May        2004             131         225                    137 \r\n 6 June       2004             134.        231.                   137 \r\n 7 July       2004             134.        234.                   137 \r\n 8 August     2004             134.        234.                   137 \r\n 9 September  2004             130.        234.                   136.\r\n10 October    2004             128.        234.                   136.\r\n# ... with 110 more rows, and 1 more variable:\r\n#   extra_large_dozen <dbl>\r\n\r\n2. Explain the variables in your dataset.\r\nI used \\(str()\\) function to check the data type of each variable.\r\n\r\n\r\nstr(egg_data)\r\n\r\n\r\ntibble [120 x 6] (S3: tbl_df/tbl/data.frame)\r\n $ month                 : chr [1:120] \"January\" \"February\" \"March\" \"April\" ...\r\n $ year                  : num [1:120] 2004 2004 2004 2004 2004 ...\r\n $ large_half_dozen      : num [1:120] 126 128 131 131 131 ...\r\n $ large_dozen           : num [1:120] 230 226 225 225 225 ...\r\n $ extra_large_half_dozen: num [1:120] 132 134 137 137 137 ...\r\n $ extra_large_dozen     : num [1:120] 230 230 230 234 236 ...\r\n\r\nVariable\r\nData type\r\nDescription\r\nmonth\r\nCharacter\r\nWhich month the data is from.\r\nyear\r\nNumber\r\nWhich year the data is from.\r\nlarge_half_dozen\r\nNumber\r\nHow many large-half-dozen eggs.\r\nlarge_dozen\r\nNumber\r\nHow many large-dozen eggs.\r\nextra_large_half_dozen\r\nNumber\r\nHow many extra-large-half-dozen eggs.\r\nextra_large_dozen\r\nNumber\r\nHow many extra-large-dozen eggs.\r\n3. Demonstrate your knowledge.\r\nThe following code show the top five years of February with the highest number of extra large eggs.\r\n\r\n\r\negg_data %>%\r\n  filter(month==\"February\") %>%\r\n  arrange(desc(extra_large_half_dozen),desc(extra_large_dozen)) %>%\r\n  select(`year`,contains(\"extra\")) %>%\r\n  head(5)\r\n\r\n\r\n# A tibble: 5 x 3\r\n   year extra_large_half_dozen extra_large_dozen\r\n  <dbl>                  <dbl>             <dbl>\r\n1  2013                   188.              290 \r\n2  2012                   186.              288.\r\n3  2009                   186.              286.\r\n4  2010                   186.              286.\r\n5  2011                   186.              286.\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-28T18:25:46-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/hw2/",
+    "title": "HW2",
+    "description": "HW2-Data wrangling",
+    "author": [
+      {
+        "name": "Rhowena Vespa",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-28",
+    "categories": [],
+    "contents": "\r\nHomework 2 using data set from Chicago Public Schools\r\nObjective: Identify Chicago Public Schools with highest safety scores and college enrollments.\r\nTasks:(1) Read data set into R (2) Explain variables in data set (3) Perform 2 data wrangling operations\r\nConfirm we have the following packages: distill, dplyr, readr\r\nRead CSV file into R\r\n\r\n\r\nlibrary(distill)\r\nlibrary(dplyr)\r\nlibrary(readr)\r\nHW2<- read.csv('ChicagoPublicSchools.csv',TRUE,',')\r\nclass(HW2)\r\n\r\n\r\n[1] \"data.frame\"\r\n\r\ncolnames(HW2)\r\n\r\n\r\n [1] \"School_ID\"                                       \r\n [2] \"NAME_OF_SCHOOL\"                                  \r\n [3] \"Elementary..Middle..or.High.School\"              \r\n [4] \"Street_Address\"                                  \r\n [5] \"City\"                                            \r\n [6] \"State\"                                           \r\n [7] \"ZIP_Code\"                                        \r\n [8] \"Phone_Number\"                                    \r\n [9] \"Link\"                                            \r\n[10] \"Network_Manager\"                                 \r\n[11] \"Collaborative_Name\"                              \r\n[12] \"Adequate_Yearly_Progress_Made_\"                  \r\n[13] \"Track_Schedule\"                                  \r\n[14] \"CPS_Performance_Policy_Status\"                   \r\n[15] \"CPS_Performance_Policy_Level\"                    \r\n[16] \"HEALTHY_SCHOOL_CERTIFIED\"                        \r\n[17] \"Safety_Icon\"                                     \r\n[18] \"SAFETY_SCORE\"                                    \r\n[19] \"Family_Involvement_Icon\"                         \r\n[20] \"Family_Involvement_Score\"                        \r\n[21] \"Environment_Icon\"                                \r\n[22] \"Environment_Score\"                               \r\n[23] \"Instruction_Icon\"                                \r\n[24] \"Instruction_Score\"                               \r\n[25] \"Leaders_Icon\"                                    \r\n[26] \"Leaders_Score\"                                   \r\n[27] \"Teachers_Icon\"                                   \r\n[28] \"Teachers_Score\"                                  \r\n[29] \"Parent_Engagement_Icon\"                          \r\n[30] \"Parent_Engagement_Score\"                         \r\n[31] \"Parent_Environment_Icon\"                         \r\n[32] \"Parent_Environment_Score\"                        \r\n[33] \"AVERAGE_STUDENT_ATTENDANCE\"                      \r\n[34] \"Rate_of_Misconducts__per_100_students_\"          \r\n[35] \"Average_Teacher_Attendance\"                      \r\n[36] \"Individualized_Education_Program_Compliance_Rate\"\r\n[37] \"Pk_2_Literacy__\"                                 \r\n[38] \"Pk_2_Math__\"                                     \r\n[39] \"Gr3_5_Grade_Level_Math__\"                        \r\n[40] \"Gr3_5_Grade_Level_Read__\"                        \r\n[41] \"Gr3_5_Keep_Pace_Read__\"                          \r\n[42] \"Gr3_5_Keep_Pace_Math__\"                          \r\n[43] \"Gr6_8_Grade_Level_Math__\"                        \r\n[44] \"Gr6_8_Grade_Level_Read__\"                        \r\n[45] \"Gr6_8_Keep_Pace_Math_\"                           \r\n[46] \"Gr6_8_Keep_Pace_Read__\"                          \r\n[47] \"Gr_8_Explore_Math__\"                             \r\n[48] \"Gr_8_Explore_Read__\"                             \r\n[49] \"ISAT_Exceeding_Math__\"                           \r\n[50] \"ISAT_Exceeding_Reading__\"                        \r\n[51] \"ISAT_Value_Add_Math\"                             \r\n[52] \"ISAT_Value_Add_Read\"                             \r\n[53] \"ISAT_Value_Add_Color_Math\"                       \r\n[54] \"ISAT_Value_Add_Color_Read\"                       \r\n[55] \"Students_Taking__Algebra__\"                      \r\n[56] \"Students_Passing__Algebra__\"                     \r\n[57] \"X9th.Grade.EXPLORE..2009.\"                       \r\n[58] \"X9th.Grade.EXPLORE..2010.\"                       \r\n[59] \"X10th.Grade.PLAN..2009.\"                         \r\n[60] \"X10th.Grade.PLAN..2010.\"                         \r\n[61] \"Net_Change_EXPLORE_and_PLAN\"                     \r\n[62] \"X11th.Grade.Average.ACT..2011.\"                  \r\n[63] \"Net_Change_PLAN_and_ACT\"                         \r\n[64] \"College_Eligibility__\"                           \r\n[65] \"Graduation_Rate__\"                               \r\n[66] \"College_Enrollment_Rate__\"                       \r\n[67] \"COLLEGE_ENROLLMENT\"                              \r\n[68] \"General_Services_Route\"                          \r\n[69] \"Freshman_on_Track_Rate__\"                        \r\n[70] \"X_COORDINATE\"                                    \r\n[71] \"Y_COORDINATE\"                                    \r\n[72] \"Latitude\"                                        \r\n[73] \"Longitude\"                                       \r\n[74] \"COMMUNITY_AREA_NUMBER\"                           \r\n[75] \"COMMUNITY_AREA_NAME\"                             \r\n[76] \"Ward\"                                            \r\n[77] \"Police_District\"                                 \r\n[78] \"Location\"                                        \r\n\r\ndim(HW2)\r\n\r\n\r\n[1] 566  78\r\n\r\nExplain variables in data set\r\nDataset contains numeric, integer and character data types.\r\n\r\n\r\nclass(\"NAME_OF_SCHOOL\")\r\n\r\n\r\n[1] \"character\"\r\n\r\ntypeof(\"SAFETY_SCORE\")\r\n\r\n\r\n[1] \"character\"\r\n\r\nclass(\"COLLEGE_ENROLLMENT\")\r\n\r\n\r\n[1] \"character\"\r\n\r\nclass(\"Graduation_Rate__\")\r\n\r\n\r\n[1] \"character\"\r\n\r\nData Wrangling Operations\r\nData set dimension is 566 x 78. We will only show select columns of interest.\r\nTASK: Identify Schools with highest safety scores and highest college enrollment\r\n\r\n\r\n  filter(select(HW2, NAME_OF_SCHOOL,SAFETY_SCORE),SAFETY_SCORE>95)\r\n\r\n\r\n                                     NAME_OF_SCHOOL SAFETY_SCORE\r\n1                 Abraham Lincoln Elementary School           99\r\n2           Alexander Graham Bell Elementary School           99\r\n3      Annie Keller Elementary Gifted Magnet School           99\r\n4               Augustus H Burley Elementary School           99\r\n5       Edgar Allan Poe Elementary Classical School           99\r\n6                       Edgebrook Elementary School           99\r\n7                  Ellen Mitchell Elementary School           99\r\n8        James E McDade Elementary Classical School           99\r\n9                  James G Blaine Elementary School           99\r\n10              LaSalle Elementary Language Academy           99\r\n11 Mary E Courtenay Elementary Language Arts Center           99\r\n12        Northside College Preparatory High School           99\r\n13            Northside Learning Center High School           99\r\n14                   Norwood Park Elementary School           99\r\n15                    Oriole Park Elementary School           99\r\n16                      Sauganash Elementary School           99\r\n17      Stephen Decatur Classical Elementary School           99\r\n18                         Talman Elementary School           99\r\n19    Walter Payton College Preparatory High School           98\r\n20                       Wildwood Elementary School           99\r\n\r\n  arrange(select(HW2, NAME_OF_SCHOOL,COLLEGE_ENROLLMENT),desc(COLLEGE_ENROLLMENT)) %>%\r\n  slice(1:10)\r\n\r\n\r\n                                    NAME_OF_SCHOOL COLLEGE_ENROLLMENT\r\n1              Albert G Lane Technical High School               4368\r\n2  Marie Sklodowska Curie Metropolitan High School               3320\r\n3                  William Howard Taft High School               2922\r\n4                         Thomas Kelly High School               2883\r\n5                          Carl Schurz High School               2366\r\n6                         Lincoln Park High School               2342\r\n7               Whitney M Young Magnet High School               2166\r\n8  Charles P Steinmetz Academic Centre High School               1890\r\n9                      Kenwood Academy High School               1852\r\n10                 Sidney Sawyer Elementary School               1846\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-28T18:25:43-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/erinliuhw1/",
     "title": "Erin_Liu_HW1",
     "description": "A new article created using the Distill format.",
@@ -14,40 +120,6 @@
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\nThis is the HW1 from Erin Liu\n\n\n\n",
     "preview": {},
     "last_modified": "2021-12-26T17:52:57-05:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/hw1/",
-    "title": "HW1",
-    "description": "A new article created using the Distill format.",
-    "author": [
-      {
-        "name": "Haoyan Xiang",
-        "url": {}
-      }
-    ],
-    "date": "2021-12-26",
-    "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-12-26T17:52:07-05:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/hw2/",
-    "title": "HW2",
-    "description": "Homework 2",
-    "author": [
-      {
-        "name": "Adam Wheeler",
-        "url": "na"
-      }
-    ],
-    "date": "2021-12-26",
-    "categories": [],
-    "contents": "\r\nRead in a data set\r\n\r\n\r\nlibrary(tidyverse)\r\nlibrary(dplyr)\r\npoultry <- read_csv(\"../Downloads/poultry_tidy.csv\")\r\n\r\n\r\n\r\nExplain the variables\r\n\r\n\r\ncols(\r\n  Product = col_character(), # string\r\n  Month = col_character(), # string\r\n  Year = col_double(), # numeric\r\n  Price_Dollar = col_double() # numeric\r\n)\r\n\r\n\r\n\r\nPerform basic operations\r\nGet highest price per product\r\n\r\n\r\npoultry %>%\r\n  arrange(desc(Price_Dollar)) %>%\r\n  select(Product, Price_Dollar) %>%\r\n  group_by(Product) %>%\r\n  slice(1) %>%\r\n  ungroup() %>%\r\n  arrange(desc(Price_Dollar))\r\n\r\n\r\n# A tibble: 5 x 2\r\n  Product        Price_Dollar\r\n  <chr>                 <dbl>\r\n1 B/S Breast             7.04\r\n2 Bone-in Breast         3.90\r\n3 Whole                  2.48\r\n4 Thighs                 2.22\r\n5 Whole Legs             2.04\r\n\r\nGet date of lowest price per product\r\n\r\n\r\npoultry %>%\r\n  arrange(Price_Dollar) %>%\r\n  select(Product, Month, Year, Price_Dollar) %>%\r\n  group_by(Product) %>%\r\n  slice(1)\r\n\r\n\r\n# A tibble: 5 x 4\r\n# Groups:   Product [5]\r\n  Product        Month    Year Price_Dollar\r\n  <chr>          <chr>   <dbl>        <dbl>\r\n1 B/S Breast     January  2012         6.38\r\n2 Bone-in Breast January  2013         3.90\r\n3 Thighs         July     2004         2.00\r\n4 Whole          January  2004         1.98\r\n5 Whole Legs     January  2004         1.94\r\n\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2021-12-26T18:14:58-05:00",
     "input_file": {}
   },
   {
@@ -66,7 +138,7 @@
     ],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-12-26T18:21:10-05:00",
+    "last_modified": "2021-12-28T18:26:57-05:00",
     "input_file": {}
   }
 ]

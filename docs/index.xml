@@ -12,29 +12,63 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Challenge 1 Solution</title>
+      <dc:creator>Sean Conway</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/challenge-1-solution</link>
+      <description>Reading in the first sheet from the Active Duty Marital Data.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/challenge-1-solution</guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>HW2</title>
+      <dc:creator>Adam Wheeler</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsdacssgithubiodacss601winter2022postshw2</link>
+      <description>Homework 2</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsdacssgithubiodacss601winter2022postshw2</guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsdacssgithubiodacss601winter2022postshw2/../../images/white-dacss-wordmark.png" medium="image" type="image/png" width="1492" height="245"/>
+    </item>
+    <item>
+      <title>HW1</title>
+      <dc:creator>Rhowena Vespa</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/hw1-owenvespa</link>
+      <description>HW1 -R Markdown post</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/hw1-owenvespa</guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/hw1-owenvespa/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>HW1</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/hw1</link>
+      <description>HW1 for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/hw1</guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>HW2 by Guodong Zhang</title>
+      <dc:creator>Guodong Zhang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/hw2-by-guodong-zhang</link>
+      <description>This is my Homework 2 for DACSS 601.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/hw2-by-guodong-zhang</guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>HW2</title>
+      <dc:creator>Rhowena Vespa</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/hw2</link>
+      <description>HW2-Data wrangling</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/hw2</guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Erin_Liu_HW1</title>
       <dc:creator>Erin Liu</dc:creator>
       <link>https://github.com/DACSS/dacss_course_website/posts/erinliuhw1</link>
       <description>A new article created using the Distill format.</description>
       <guid>https://github.com/DACSS/dacss_course_website/posts/erinliuhw1</guid>
-      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>HW1</title>
-      <dc:creator>Haoyan Xiang</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/hw1</link>
-      <description>A new article created using the Distill format.</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/hw1</guid>
-      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>HW2</title>
-      <dc:creator>Adam Wheeler</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/hw2</link>
-      <description>Homework 2</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/hw2</guid>
       <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
     </item>
     <item>
