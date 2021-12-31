@@ -12,7 +12,72 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>HW01</title>
+      <dc:creator>Angela Smith</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith851820</link>
+      <description>Create an R Markdown test post</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith851820</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>HW02</title>
+      <dc:creator>Angela Smith</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith851830</link>
+      <description>Read in a data set</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith851830</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Brinda Murulidhara HW2</title>
+      <dc:creator>Brinda Murulidhara</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda851751</link>
+      <description>Data Wrangling</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda851751</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Erin Liu HW2</title>
+      <dc:creator>Erin Liu</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw2</link>
+      <description>HW2 created using the Distill format.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw2</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>HW2</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11851716</link>
+      <description>HW2 for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11851716</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>KJM RMarkdown</title>
+      <dc:creator>K Martins</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8850389</link>
+      <description>This is HW1. Resubmission to include description</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8850389</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8850389/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Homework 2 Read In, Explain, Dplyr Wrangling</title>
+      <dc:creator>K Martins</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8851772</link>
+      <description>This homework reads in, explains variables, and Data Wrangles</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8851772</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Homework 2 : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlaya851735</link>
+      <description>Submission for Homework 2</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlaya851735</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Challenge 1 Solution</title>
       <dc:creator>Sean Conway</dc:creator>

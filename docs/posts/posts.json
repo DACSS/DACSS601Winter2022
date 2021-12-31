@@ -1,5 +1,143 @@
 [
   {
+    "path": "posts/httpsrpubscomangelanicolesmith851820/",
+    "title": "HW01",
+    "description": "Create an R Markdown test post",
+    "author": [
+      {
+        "name": "Angela Smith",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\nR Markdown test post\nThis is a test post.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:23-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsrpubscomangelanicolesmith851830/",
+    "title": "HW02",
+    "description": "Read in a data set",
+    "author": [
+      {
+        "name": "Angela Smith",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\nIntroduction\nFor HW02, I am reading in data from the tidy dataset australian_marriage_tidy.xlsx.\nRead-In Dataset australian_marriage_tidy.xlsx\nThe Australian Marriage dataset includes four columns: territory (string), resp (string), count (numeric), and percent (numeric). “territory” reflects geographical regions of Australia. “resp” reflects yes or no observations related to marriage. “count” includes the number of yes or no observations in a given region. “percent” includes count as a percent of yes or no observations in a given region.\n\n\nknitr::opts_chunk$set(echo = TRUE)\n\nlibrary(readxl)\n\naustralian_marriages <- read_excel(path=\"/Users/angelasmith/Desktop/DACSS601/HW02/australian_marriage_tidy.xlsx\", range=\"A1:D17\")\n\naustralian_marriages\n\n\n# A tibble: 16 × 4\n   territory                       resp    count percent\n   <chr>                           <chr>   <dbl>   <dbl>\n 1 New South Wales                 yes   2374362    57.8\n 2 New South Wales                 no    1736838    42.2\n 3 Victoria                        yes   2145629    64.9\n 4 Victoria                        no    1161098    35.1\n 5 Queensland                      yes   1487060    60.7\n 6 Queensland                      no     961015    39.3\n 7 South Australia                 yes    592528    62.5\n 8 South Australia                 no     356247    37.5\n 9 Western Australia               yes    801575    63.7\n10 Western Australia               no     455924    36.3\n11 Tasmania                        yes    191948    63.6\n12 Tasmania                        no     109655    36.4\n13 Northern Territory(b)           yes     48686    60.6\n14 Northern Territory(b)           no      31690    39.4\n15 Australian Capital Territory(c) yes    175459    74  \n16 Australian Capital Territory(c) no      61520    26  \n\nWrangling data using filter() and arrange()\nPercent of Australians married by territory\nTo explore the data further, I am filtering the dataset by marital “yes” observations and arranging in descending order.\n\n\nknitr::opts_chunk$set(echo = TRUE)\n\nlibrary(dplyr)\ndata(australian_marriages)\naustralian_marriages %>%\n  filter(resp == 'yes') %>%\n  arrange(desc(percent))\n\n\n# A tibble: 8 × 4\n  territory                       resp    count percent\n  <chr>                           <chr>   <dbl>   <dbl>\n1 Australian Capital Territory(c) yes    175459    74  \n2 Victoria                        yes   2145629    64.9\n3 Western Australia               yes    801575    63.7\n4 Tasmania                        yes    191948    63.6\n5 South Australia                 yes    592528    62.5\n6 Queensland                      yes   1487060    60.7\n7 Northern Territory(b)           yes     48686    60.6\n8 New South Wales                 yes   2374362    57.8\n\nMarriage status of the majority of Australians by geographic region\nWe can determine the dominant marriage status (married or unmarried) for the majority of Australians by each territory by filtering the percent column to >=50%.\n\n\nknitr::opts_chunk$set(echo = TRUE)\n\nlibrary(dplyr)\ndata(australian_marriages)\naustralian_marriages %>%\n  filter(percent >= 50) %>%\n  arrange(desc(percent))\n\n\n# A tibble: 8 × 4\n  territory                       resp    count percent\n  <chr>                           <chr>   <dbl>   <dbl>\n1 Australian Capital Territory(c) yes    175459    74  \n2 Victoria                        yes   2145629    64.9\n3 Western Australia               yes    801575    63.7\n4 Tasmania                        yes    191948    63.6\n5 South Australia                 yes    592528    62.5\n6 Queensland                      yes   1487060    60.7\n7 Northern Territory(b)           yes     48686    60.6\n8 New South Wales                 yes   2374362    57.8\n\nCoincidentally, the tables from both exercises are the same. The majority of Australians from each territory are married.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:25-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsrpubscombrinda851751/",
+    "title": "Brinda Murulidhara HW2",
+    "description": "Data Wrangling",
+    "author": [
+      {
+        "name": "Brinda Murulidhara",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\r\nRead in a dataset\r\nI have used the railroad employee count dataset (Filename: railroad_2012_clean_county_tidy.csv) for data wrangling operations. Below is the code snippet to read and preview the data.\r\n\r\n\r\nrailroad_data <- read.csv(\"railroad_2012_clean_county_tidy.csv\")\r\nhead(railroad_data)\r\n\r\n\r\n  state               county total_employees\r\n1    AE                  APO               2\r\n2    AK            ANCHORAGE               7\r\n3    AK FAIRBANKS NORTH STAR               2\r\n4    AK               JUNEAU               3\r\n5    AK    MATANUSKA-SUSITNA               2\r\n6    AK                SITKA               1\r\n\r\nExplain the variables in your dataset\r\nBelow are the variables in the dataset:\r\nstate: The state corresponding to the county under consideration. The data type is String consisting of the abbreviation for the state.\r\ncounty: The county in which the total number of employees is counted. The data type is String.\r\ntotal_employees: Total number of railroad employees in a given county. The data type is Numeric\r\nData-wrangling operations\r\nI filtered rows correspoding to Massachusetts state.\r\nFilter\r\n\r\n\r\nlibrary(\"dplyr\")\r\nfiltered_railroad_data <- filter(railroad_data, state==\"MA\")\r\n\r\n\r\n\r\nArrange\r\nI arranged the rows filtered in the previous step by total employee count ascending.\r\n\r\n\r\nlibrary(\"dplyr\")\r\narrange(filtered_railroad_data, total_employees)\r\n\r\n\r\n   state     county total_employees\r\n1     MA BARNSTABLE              44\r\n2     MA  BERKSHIRE              50\r\n3     MA  HAMPSHIRE              68\r\n4     MA   FRANKLIN             113\r\n5     MA    HAMPDEN             202\r\n6     MA    BRISTOL             232\r\n7     MA  WORCESTER             310\r\n8     MA      ESSEX             314\r\n9     MA    NORFOLK             386\r\n10    MA   PLYMOUTH             429\r\n11    MA    SUFFOLK             558\r\n12    MA  MIDDLESEX             673\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:12-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsrpubscomerinliuhw2/",
+    "title": "Erin Liu HW2",
+    "description": "HW2 created using the Distill format.",
+    "author": [
+      {
+        "name": "Erin Liu",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\nRead in dataset\nI used the dataset “railroad_2012_clean_state - Sheet1.csv” from the “Sample Datasets” section on Google Classroom.\n\n\nHW2_data<- read.csv('/Users/erinliu/Downloads/railroad_2012_clean_state - Sheet1.csv',TRUE,',')\ndim(HW2_data)\n\n\n[1] 53  2\n\nData types of variables\nstate:  string, the abbreviation of each state\ntotal_employees:  numeric, the total number of employees of this state\nshape: 53*2\nData wrangling\n1. select the states that have total_employees greater than 1000\n\n\n filter(select(HW2_data, state,total_employees),total_employees>1000)\n\n\n   state total_employees\n1     AL            4257\n2     AR            3871\n3     AZ            3153\n4     CA           13137\n5     CO            3650\n6     CT            2592\n7     DE            1495\n8     FL            7419\n9     GA            8605\n10    IA            4019\n11    ID            1563\n12    IL           19131\n13    IN            8537\n14    KS            6092\n15    KY            4811\n16    LA            3915\n17    MA            3379\n18    MD            4709\n19    MI            3932\n20    MN            5467\n21    MO            8419\n22    MS            2111\n23    MT            3327\n24    NC            3143\n25    ND            2204\n26    NE           13176\n27    NJ            8329\n28    NM            1958\n29    NY           17050\n30    OH            9056\n31    OK            2318\n32    OR            2322\n33    PA           12769\n34    SC            2296\n35    TN            4952\n36    TX           19839\n37    UT            1917\n38    VA            7551\n39    WA            5222\n40    WI            3773\n41    WV            3213\n42    WY            2876\n\n2. arrange the data to be in desc order of total_employees and show the top ten\n\n\n  arrange(select(HW2_data, state,total_employees),desc(total_employees)) %>%\n  slice(1:10)\n\n\n   state total_employees\n1     TX           19839\n2     IL           19131\n3     NY           17050\n4     NE           13176\n5     CA           13137\n6     PA           12769\n7     OH            9056\n8     GA            8605\n9     IN            8537\n10    MO            8419\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:02-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsrpubscomjamesxiang11851716/",
+    "title": "HW2",
+    "description": "HW2 for Haoyan",
+    "author": [
+      {
+        "name": "Haoyan Xiang",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\nIn this homework, I work with the railroad(cleaned version) dataset.\n\n\nknitr::opts_chunk$set(echo = TRUE)\n# Read in csv file and print first few lines.\nlibrary(dplyr)\nsetwd(\"~/Downloads\")\nrailroad = read.csv(\"railroad_2012_clean_state.csv\")\nhead(railroad)\n\n\n  state total_employees\n1    AE               2\n2    AK             103\n3    AL            4257\n4    AP               1\n5    AR            3871\n6    AZ            3153\n\nVariable types\nState: string, the abbreviation of the state\nTotal_employees: numeric, the total number of employees in the state\n\n\nknitr::opts_chunk$set(echo = TRUE)\n# Select the state column \nselect(railroad,\"state\")\n\n\n   state\n1     AE\n2     AK\n3     AL\n4     AP\n5     AR\n6     AZ\n7     CA\n8     CO\n9     CT\n10    DC\n11    DE\n12    FL\n13    GA\n14    HI\n15    IA\n16    ID\n17    IL\n18    IN\n19    KS\n20    KY\n21    LA\n22    MA\n23    MD\n24    ME\n25    MI\n26    MN\n27    MO\n28    MS\n29    MT\n30    NC\n31    ND\n32    NE\n33    NH\n34    NJ\n35    NM\n36    NV\n37    NY\n38    OH\n39    OK\n40    OR\n41    PA\n42    RI\n43    SC\n44    SD\n45    TN\n46    TX\n47    UT\n48    VA\n49    VT\n50    WA\n51    WI\n52    WV\n53    WY\n\n\n\n# sort by number of employees descending\narrange(railroad,desc(total_employees))\n\n\n   state total_employees\n1     TX           19839\n2     IL           19131\n3     NY           17050\n4     NE           13176\n5     CA           13137\n6     PA           12769\n7     OH            9056\n8     GA            8605\n9     IN            8537\n10    MO            8419\n11    NJ            8329\n12    VA            7551\n13    FL            7419\n14    KS            6092\n15    MN            5467\n16    WA            5222\n17    TN            4952\n18    KY            4811\n19    MD            4709\n20    AL            4257\n21    IA            4019\n22    MI            3932\n23    LA            3915\n24    AR            3871\n25    WI            3773\n26    CO            3650\n27    MA            3379\n28    MT            3327\n29    WV            3213\n30    AZ            3153\n31    NC            3143\n32    WY            2876\n33    CT            2592\n34    OR            2322\n35    OK            2318\n36    SC            2296\n37    ND            2204\n38    MS            2111\n39    NM            1958\n40    UT            1917\n41    ID            1563\n42    DE            1495\n43    SD             949\n44    NV             746\n45    ME             654\n46    RI             487\n47    NH             393\n48    DC             279\n49    VT             259\n50    AK             103\n51    HI               4\n52    AE               2\n53    AP               1\n\n\n\n# sort by number of employees descending where total employees >= 5000\narrange(filter(railroad, `total_employees` >= 5000),desc(total_employees))\n\n\n   state total_employees\n1     TX           19839\n2     IL           19131\n3     NY           17050\n4     NE           13176\n5     CA           13137\n6     PA           12769\n7     OH            9056\n8     GA            8605\n9     IN            8537\n10    MO            8419\n11    NJ            8329\n12    VA            7551\n13    FL            7419\n14    KS            6092\n15    MN            5467\n16    WA            5222\n\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:07-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsrpubscommartike8850389/",
+    "title": "KJM RMarkdown",
+    "description": "This is HW1. Resubmission to include description",
+    "author": [
+      {
+        "name": "K Martins",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\r\nR Markdown\r\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\r\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\r\n\r\n\r\nsummary(cars)\r\n\r\n\r\n     speed           dist       \r\n Min.   : 4.0   Min.   :  2.00  \r\n 1st Qu.:12.0   1st Qu.: 26.00  \r\n Median :15.0   Median : 36.00  \r\n Mean   :15.4   Mean   : 42.98  \r\n 3rd Qu.:19.0   3rd Qu.: 56.00  \r\n Max.   :25.0   Max.   :120.00  \r\n\r\nIncluding Plots\r\nYou can also embed plots, for example:\r\n\r\n\r\n\r\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n\r\n\r\n\r\n",
+    "preview": "posts/httpsrpubscommartike8850389/distill-preview.png",
+    "last_modified": "2021-12-30T21:15:20-05:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
+    "path": "posts/httpsrpubscommartike8851772/",
+    "title": "Homework 2 Read In, Explain, Dplyr Wrangling",
+    "description": "This homework reads in, explains variables, and Data Wrangles",
+    "author": [
+      {
+        "name": "K Martins",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\r\nIntroduction\r\nThis is K Martins’s submission for Homework Two is DACSS 601. In this I will read in a clean excel data set railroad_2012_clean_county. Then I will explain the variables, and wrangle the data four times within subtitles below.\r\nNote that I attempted to add in another column that listed what % of each county employee count was to the sum of the State (e.g. what % of railroad employees in MA worked in Suffolk County). Unfortunately I was unsuccessful and did not include here, maybe we can go over this in class?\r\nKevin’s Set-Ups\r\n\r\n\r\n\r\nRead In Railroad Employees by County Data and explain the Variables\r\nHere I read in the Railroad Total Employees by county data from my set working directory. The file was a clean excel data set. I previewed the first five rows using the head() function. The variables are the columns which are state in  or character, county in , and total_employees in  or numeric.\r\n\r\n# A tibble: 6 x 3\r\n  state county               total_employees\r\n  <chr> <chr>                          <dbl>\r\n1 AE    APO                                2\r\n2 AK    ANCHORAGE                          7\r\n3 AK    FAIRBANKS NORTH STAR               2\r\n4 AK    JUNEAU                             3\r\n5 AK    MATANUSKA-SUSITNA                  2\r\n6 AK    SITKA                              1\r\n\r\nFilter for Continental US\r\nIn this data-wrangling I have filtered for only States within the Continental US to include DC. I did this by filtering out and using the NOT != function. I Would have liked to embed an OR function but I couldn’t get my nest to work. Instead I listed a NOT function for each State I was filtering out.\r\n\r\n# A tibble: 6 x 3\r\n  state county  total_employees\r\n  <chr> <chr>             <dbl>\r\n1 AL    AUTAUGA             102\r\n2 AL    BALDWIN             143\r\n3 AL    BARBOUR               1\r\n4 AL    BIBB                 25\r\n5 AL    BLOUNT              154\r\n6 AL    BULLOCK              13\r\n\r\nArrange States Alphabetical Order then by Total Employees\r\nIn this dplyr function I arranged the States that had been filtered to the Continental US by Alphabetical order then by Total Employees in descending order.\r\n\r\n# A tibble: 6 x 3\r\n  state county    total_employees\r\n  <chr> <chr>               <dbl>\r\n1 AL    JEFFERSON             990\r\n2 AL    MOBILE                331\r\n3 AL    COLBERT               199\r\n4 AL    WALKER                192\r\n5 AL    ST CLAIR              162\r\n6 AL    SHELBY                158\r\n\r\nCount Counties by State\r\nUsing the group by and summarise functions I counted the counties per each state within the dataset. Essentially, I was mimicking a count Excel pivot function. As I mentioned in the introduction, I would have liked to to add in another column that listed what % of each county employee count was to the sum of the State (e.g. what % of railroad employees in MA worked in Suffolk County) but was unsuccessful. Maybe this is something that we can go over in class.\r\n\r\n# A tibble: 6 x 2\r\n  state total_employees\r\n  <chr>           <int>\r\n1 AL                 67\r\n2 AR                 72\r\n3 AZ                 15\r\n4 CA                 55\r\n5 CO                 57\r\n6 CT                  8\r\n\r\nPrint the Counties Per State\r\nThis is to print the full list of counties per state in the dataset.\r\n\r\n# A tibble: 49 x 2\r\n   state total_employees\r\n   <chr>           <int>\r\n 1 AL                 67\r\n 2 AR                 72\r\n 3 AZ                 15\r\n 4 CA                 55\r\n 5 CO                 57\r\n 6 CT                  8\r\n 7 DC                  1\r\n 8 DE                  3\r\n 9 FL                 67\r\n10 GA                152\r\n# ... with 39 more rows\r\n\r\nThis is the end of the document.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:17-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/httpsrpubscomsbarlaya851735/",
+    "title": "Homework 2 : Samhith Barlaya",
+    "description": "Submission for Homework 2",
+    "author": [
+      {
+        "name": "Samhith Barlaya",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-30",
+    "categories": [],
+    "contents": "\r\n1. Read in a dataset\r\nFor this homework, I read in the poultry_tidy dataset. A glimpse of the dataset, obtained using head() method can be found below:\r\n\r\n\r\nlibrary(\"readxl\")\r\npoultry_data <- read_excel(path=\"C:/Users/gbsam/Desktop/poultry_tidy.xlsx\")\r\nhead(poultry_data)\r\n\r\n\r\n# A tibble: 6 x 4\r\n  Product  Year Month    Price_Dollar\r\n  <chr>   <dbl> <chr>    <chr>       \r\n1 Whole    2013 January  2.385       \r\n2 Whole    2013 February 2.385       \r\n3 Whole    2013 March    2.385       \r\n4 Whole    2013 April    2.385       \r\n5 Whole    2013 May      2.385       \r\n6 Whole    2013 June     2.385       \r\n\r\n2. Explain the variables in your dataset\r\nThere are 4 variables in this data set. The columns Product, Month and Price_Dollars are character strings, and column year is double precision floating point number.\r\n3. Perform atleast 2 basic data-wrangling operations.\r\nI filter out the poultry items that are less that 3 dollars in price sold in month January. And then arrange them by ascending order of year sold.\r\n\r\n\r\nlibrary(\"dplyr\")\r\nfilter(poultry_data, Price_Dollar >= 3 & Month == \"January\") %>%\r\n  arrange(Year)\r\n\r\n\r\n# A tibble: 21 x 4\r\n   Product         Year Month   Price_Dollar\r\n   <chr>          <dbl> <chr>   <chr>       \r\n 1 B/S Breast      2004 January 6.455       \r\n 2 Bone-in Breast  2004 January NA          \r\n 3 Thighs          2004 January NA          \r\n 4 B/S Breast      2005 January 6.44        \r\n 5 Bone-in Breast  2005 January 3.905       \r\n 6 B/S Breast      2006 January 6.455       \r\n 7 Bone-in Breast  2006 January 3.905       \r\n 8 B/S Breast      2007 January 6.455       \r\n 9 Bone-in Breast  2007 January 3.905       \r\n10 B/S Breast      2008 January 6.455       \r\n# ... with 11 more rows\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-30T21:15:09-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/challenge-1-solution/",
     "title": "Challenge 1 Solution",
     "description": "Reading in the first sheet from the Active Duty Marital Data.",
