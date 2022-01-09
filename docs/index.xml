@@ -12,7 +12,49 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Brinda Murulidhara HW3</title>
+      <dc:creator>Brinda Murulidhara</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda852843</link>
+      <description>Final Project Proposal</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda852843</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Homework 3 : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw3</link>
+      <description>Submission for Homework 3</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw3</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Homework 3 Identify Dataset, Read in, Identify Potential Questions</title>
+      <dc:creator>K Martins</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8852865</link>
+      <description>This HW3 is my dataset, reading in data, and my research question</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8852865</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Homework 2</title>
+      <dc:creator>Timothy Lennon</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomlennont853000</link>
+      <description>Importing Data and Using dyplyr</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomlennont853000</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomlennont853000/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>HW4</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080</link>
+      <description>HW4 for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>HW1</title>
       <dc:creator>Adam Wheeler</dc:creator>
