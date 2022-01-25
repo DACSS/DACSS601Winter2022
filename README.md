@@ -1,4 +1,4 @@
-# Make an RMarkdown
+# The process to submit assignments for students
 
 - Open RStudio  
 
