@@ -32,4 +32,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Edit the `title`, `description` and `author` fields.
 
-- You are all set! Feel free to add your code now.
+- Feel free to add your R code now.  
+
+- Publish the notebook on RPubs.  
+
+- Submit the link to the google form provided by the course instructor.  
+
+- You are all set!
