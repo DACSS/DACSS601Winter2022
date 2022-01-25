@@ -12,15 +12,95 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 20 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>HW6</title>
+      <title>Hw #3</title>
+      <dc:creator>Tim Lennon</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomlennont857314</link>
+      <description>Importing/Tidying Organic Egg and Poultry Data</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomlennont857314</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Final Paper</title>
       <dc:creator>Haoyan Xiang</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11855967</link>
-      <description>HW6 for Haoyan</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11855967</guid>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11855967/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11857750</link>
+      <description>Final paper for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11857750</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11857750/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Data Science Fundamentals Final Paper</title>
+      <dc:creator>Adam Wheeler</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomabwheelfinal-paper</link>
+      <description>Changes in the price of poultry between 2003-14</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomabwheelfinal-paper</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomabwheelfinal-paper/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Exploratory Data Analysis</title>
+      <dc:creator>Rhowena Vespa</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa857794</link>
+      <description>Heart Disease</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa857794</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa857794/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>DACSS 601 Final: Effects of War on MLB</title>
+      <dc:creator>K Martins</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8858127</link>
+      <description>Effects of War on Major League Baseball</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8858127</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8858127/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Data Science Fundamentals Paper</title>
+      <dc:creator>Brinda Murulidhara</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda857122</link>
+      <description>Final paper submission</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda857122</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda857122/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>When is the best time for hotel booking for different hotel types?</title>
+      <dc:creator>Erin Liu</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliufinal</link>
+      <description>Final project for Erin Liu</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliufinal</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliufinal/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Final Project : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayafinal</link>
+      <description>Submission for Final Project</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayafinal</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayafinal/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Final Project</title>
+      <dc:creator>Angela Smith</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith858393</link>
+      <description>Final Project</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith858393</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith858393/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>A Study of Chinese Real National Income Data</title>
+      <dc:creator>Guodong Zhang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601finalpaper</link>
+      <description>This is my final paper for DACSS 601.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601finalpaper</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601finalpaper/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>HW5</title>
@@ -41,22 +121,13 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomabwheelhw6/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>HW6</title>
-      <dc:creator>Rhowena Vespa</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa856246</link>
-      <description>Prevalence of Other Risk Factors in People with Heart Disease</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa856246</guid>
+      <title>HW06</title>
+      <dc:creator>Angela Smith</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith856957</link>
+      <description>Final Paper - Working Draft</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith856957</guid>
       <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa856246/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>Homework 5 Read, Stats, Visualizations</title>
-      <dc:creator>K Martins</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856355</link>
-      <description>This HW5 Defines Research Questions and Modifies Visualizations</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856355</guid>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856355/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith856957/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>HW6 Brinda Murulidhara</title>
@@ -68,6 +139,15 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda855645/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
+      <title>Erin Liu HW6</title>
+      <dc:creator>Erin Liu</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw6</link>
+      <description>HW6</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw6</guid>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw6/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
       <title>HW6 by Guodong Zhang</title>
       <dc:creator>Guodong Zhang</dc:creator>
       <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw6</link>
@@ -77,22 +157,22 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw6/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>Homework 6 : Samhith Barlaya</title>
-      <dc:creator>Samhith Barlaya</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw6</link>
-      <description>Submission for Homework 6</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw6</guid>
+      <title>HW6</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11855967</link>
+      <description>HW6 for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11855967</guid>
       <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw6/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11855967/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>Erin Liu HW6</title>
-      <dc:creator>Erin Liu</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw6</link>
-      <description>HW6</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw6</guid>
+      <title>Homework 5 Read, Stats, Visualizations</title>
+      <dc:creator>K Martins</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856355</link>
+      <description>This HW5 Defines Research Questions and Modifies Visualizations</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856355</guid>
       <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw6/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856355/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Homework 6 Working Draft of Effects of War on MLB</title>
@@ -104,67 +184,22 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8856953/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>HW06</title>
-      <dc:creator>Angela Smith</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith856957</link>
-      <description>Final Paper - Working Draft</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith856957</guid>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith856957/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>HW5</title>
-      <dc:creator>Haoyan Xiang</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854838</link>
-      <description>HW5 for Haoyan</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854838</guid>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854838/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>HW5 by Guodong Zhang</title>
-      <dc:creator>Guodong Zhang</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw5</link>
-      <description>This is my Homework 5 for DACSS 601.</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw5</guid>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw5/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>Homework 4 : Samhith Barlaya</title>
-      <dc:creator>Samhith Barlaya</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw4</link>
-      <description>Submission for Homework 4</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw4</guid>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>Homework 5 : Samhith Barlaya</title>
-      <dc:creator>Samhith Barlaya</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw5</link>
-      <description>Submission for Homework 5</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw5</guid>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw5/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>Brinda Murulidhara HW5</title>
-      <dc:creator>Brinda Murulidhara</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854205</link>
-      <description>Advanced visualisations</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854205</guid>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854205/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>HW5 -More Data Visualization</title>
+      <title>HW6</title>
       <dc:creator>Rhowena Vespa</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa855102</link>
-      <description>Stroke Predictor</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa855102</guid>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa855102/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa856246</link>
+      <description>Prevalence of Other Risk Factors in People with Heart Disease</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa856246</guid>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa856246/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Homework 6 : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw6</link>
+      <description>Submission for Homework 6</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw6</guid>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw6/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>HW5</title>
@@ -185,6 +220,15 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith855171/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
+      <title>Brinda Murulidhara HW5</title>
+      <dc:creator>Brinda Murulidhara</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854205</link>
+      <description>Advanced visualisations</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854205</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854205/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
       <title>Erin Liu HW5</title>
       <dc:creator>Erin Liu</dc:creator>
       <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw5</link>
@@ -194,31 +238,49 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw5/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>HW4 by Guodong Zhang</title>
+      <title>HW5 by Guodong Zhang</title>
       <dc:creator>Guodong Zhang</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw4</link>
-      <description>This is my Homework 4 for DACSS 601.</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw4</guid>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw5</link>
+      <description>This is my Homework 5 for DACSS 601.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw5</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw5/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>Erin Liu HW4</title>
-      <dc:creator>Erin Liu</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw4</link>
-      <description>HW4</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw4</guid>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <title>HW5</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854838</link>
+      <description>HW5 for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854838</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854838/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>Brinda Murulidhara HW4</title>
-      <dc:creator>Brinda Murulidhara</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854073</link>
-      <description>Descriptive Statistics</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854073</guid>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854073/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <title>HW5 -More Data Visualization</title>
+      <dc:creator>Rhowena Vespa</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa855102</link>
+      <description>Stroke Predictor</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa855102</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa855102/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Homework 4 : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw4</link>
+      <description>Submission for Homework 4</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw4</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Homework 5 : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw5</link>
+      <description>Submission for Homework 5</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw5</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw5/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>HW4</title>
@@ -230,13 +292,40 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomabwheelhw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>HW4 -Data Visualization</title>
-      <dc:creator>Rhowena Vespa</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa854286</link>
-      <description>Stroke Predictor</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa854286</guid>
+      <title>HW04</title>
+      <dc:creator>Angela Smith</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith854704</link>
+      <description>Descriptive Statistics and Visualizations</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith854704</guid>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa854286/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith854704/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Brinda Murulidhara HW4</title>
+      <dc:creator>Brinda Murulidhara</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854073</link>
+      <description>Descriptive Statistics</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854073</guid>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscombrinda854073/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Erin Liu HW4</title>
+      <dc:creator>Erin Liu</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw4</link>
+      <description>HW4</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw4</guid>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomerinliuhw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>HW4 by Guodong Zhang</title>
+      <dc:creator>Guodong Zhang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw4</link>
+      <description>This is my Homework 4 for DACSS 601.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw4</guid>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomgdzhangdacss601hw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Homework 4 Read, Stats, Visualizations</title>
@@ -248,13 +337,13 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8854623/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>HW04</title>
-      <dc:creator>Angela Smith</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith854704</link>
-      <description>Descriptive Statistics and Visualizations</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith854704</guid>
+      <title>HW4 -Data Visualization</title>
+      <dc:creator>Rhowena Vespa</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa854286</link>
+      <description>Stroke Predictor</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa854286</guid>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomangelanicolesmith854704/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomowenvespa854286/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Brinda Murulidhara HW3</title>
@@ -265,20 +354,13 @@
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Homework 3 : Samhith Barlaya</title>
-      <dc:creator>Samhith Barlaya</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw3</link>
-      <description>Submission for Homework 3</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw3</guid>
+      <title>HW4</title>
+      <dc:creator>Haoyan Xiang</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080</link>
+      <description>HW4 for Haoyan</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080</guid>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Homework 3 Identify Dataset, Read in, Identify Potential Questions</title>
-      <dc:creator>K Martins</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8852865</link>
-      <description>This HW3 is my dataset, reading in data, and my research question</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8852865</guid>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Homework 2</title>
@@ -290,13 +372,20 @@
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomlennont853000/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>HW4</title>
-      <dc:creator>Haoyan Xiang</dc:creator>
-      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080</link>
-      <description>HW4 for Haoyan</description>
-      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080</guid>
+      <title>Homework 3 Identify Dataset, Read in, Identify Potential Questions</title>
+      <dc:creator>K Martins</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8852865</link>
+      <description>This HW3 is my dataset, reading in data, and my research question</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscommartike8852865</guid>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomjamesxiang11854080/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Homework 3 : Samhith Barlaya</title>
+      <dc:creator>Samhith Barlaya</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw3</link>
+      <description>Submission for Homework 3</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/httpsrpubscomsbarlayahw3</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>HW1</title>
