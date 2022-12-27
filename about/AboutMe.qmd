@@ -1,0 +1,19 @@
+---
+title: "Sai Rishita Golla"
+image: "images/IMG_20220114_172258_Bokeh.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/rishita-golla-a1ba06143/"
+  - label: GitHub
+    url: "https://github.com/Rishita-Golla"
+  - label: Email
+    url: "sgolla@umass.edu"
+output:
+  postcards::jolla
+---
+ 
+I'm Rishita, an MSCS graduate student. Currently, I'm home for holidays!
+
+### Hobbies:
+
+I enjoy watching movies.
